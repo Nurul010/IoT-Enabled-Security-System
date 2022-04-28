@@ -17,19 +17,19 @@
 #include <WiFi.h>
 
 // REPLACE WITH YOUR NETWORK CREDENTIALS
-const char* ssid = "Nunya";
-const char* password = "ilovemangos";
+const char* ssid = "********";
+const char* password = "********";
 const byte triggerPin = GPIO_NUM_13;
 #define TRIGGER_MODE // Photo capture triggered by GPIO pin rising/falling
 //#define TIMED_MODE // Photo capture automated according to regular delay
 
 // To send Emails using Gmail on port 465 (SSL), you need to create an app password: https://support.google.com/accounts/answer/185833
-#define emailSenderAccount    "esp32senderozz@gmail.com"
-#define emailSenderPassword   "ilovemangos"
+#define emailSenderAccount    "********@gmail.com"
+#define emailSenderPassword   "********"
 #define smtpServer            "smtp.gmail.com"
 #define smtpServerPort        465
 #define emailSubject          "ESP32-CAM Photo Captured"
-#define emailRecipient        "esp32reciverozz@gmail.com"
+#define emailRecipient        "********@gmail.com"
 
 #define CAMERA_MODEL_AI_THINKER
 
