@@ -116,7 +116,7 @@ void setup() {
   esp_err_t err = esp_camera_init(&config);
   if (err != ESP_OK) {
     Serial.printf("Camera init failed with error 0x%x", err);
-    return;
+    sleep();
   }
   
   capturePhotoSaveSpiffs();
@@ -157,7 +157,7 @@ void capturePhotoSaveSpiffs( void ) {
     fb = esp_camera_fb_get();
     if (!fb) {
       Serial.println("Camera capture failed");
-      return;
+      sleep();
     }
     // Photo file name
     Serial.printf("Picture file name: %s\n", FILE_PHOTO);
